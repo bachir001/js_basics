@@ -32,8 +32,15 @@ switch (img_name) {
 
 }
 
-img1.addEventListener("mouseover",()=>{changimg("img1")});
-img2.addEventListener("mouseover",()=>{changimg("img2")});
-img3.addEventListener("mouseover",()=>{changimg("img3")});
-img4.addEventListener("mouseover",()=>{changimg("img4")});
-img5.addEventListener("mouseover",()=>{changimg("img5")});
+function comeback(imgname){
+  if (imgname=="img1") {
+    img1.src="images/image1.jpg";
+  }
+}
+
+  img1.addEventListener("mouseover",()=>{changimg("img1")});
+  img1.addEventListener("mouseout",()=>{comeback("img1")});
+  img2.addEventListener("mouseover",()=>{changimg("img2")});
+  img3.addEventListener("mouseover",()=>{changimg("img3")});
+  img4.addEventListener("mouseover",()=>{changimg("img4")});
+  img5.addEventListener("mouseover",()=>{changimg("img5")});
