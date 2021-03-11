@@ -3,9 +3,9 @@ var red1=document.querySelector('.red');
 var blue1=document.querySelector('.blue')
 var text1=document.getElementById('text');
 
-function hide_show(anchor_id) {
+function color(color_name) {
 
-switch (anchor_id) {
+switch (color_name) {
   case "green":
     text1.style.color= "green";
     break;
@@ -23,6 +23,6 @@ switch (anchor_id) {
 }
 
 
-green1.addEventListener("click",()=>{hide_show("green")});
-red1.addEventListener("click",()=>{hide_show("red")});
-blue1.addEventListener("click",()=>{hide_show("blue")});
+green1.addEventListener("click",()=>{color("green")});
+red1.addEventListener("click",()=>{color("red")});
+blue1.addEventListener("click",()=>{color("blue")});
